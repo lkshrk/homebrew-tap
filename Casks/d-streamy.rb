@@ -1,6 +1,6 @@
 cask "d-streamy" do
-  version "1.0.0"
-  sha256 "4407844ed99042a9c155f7f8ae87ad5fb1cb16ac6769e54b382da334f30249ca"
+  version "1.0.1"
+  sha256 "91b2d6a8229daa62918296408f1c147378fef234cc7223747ceadcab4d8203d6"
 
   url "https://github.com/lkshrk/d-streamy/releases/download/v#{version}/D-Streamy.zip"
   name "D-Streamy"
