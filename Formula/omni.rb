@@ -5,23 +5,23 @@
 class Omni < Formula
   desc "Manage all your dev tools from a single JSON config file."
   homepage "https://github.com/lkshrk/omni"
-  version "0.9.0"
+  version "0.9.2"
   license "MIT"
 
   depends_on "stow"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lkshrk/omni/releases/download/v0.9.0/omni_darwin_x86_64.tar.gz"
-      sha256 "5d6ac9c01ce78e6b5b827e81aaf10ff821ffeb5dbc0e35145c25a2ef3725784b"
+      url "https://github.com/lkshrk/omni/releases/download/v0.9.2/omni_darwin_x86_64.tar.gz"
+      sha256 "977cb1b81d6a13facb04f4d0d178f5ee2dfbde2b0a90f986f414a95ea09ad7fa"
 
       define_method(:install) do
         bin.install "omni"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lkshrk/omni/releases/download/v0.9.0/omni_darwin_arm64.tar.gz"
-      sha256 "a6bdbc2afdc0861be055d7d66f54fab81f11222a0bc3ca69c8903b911dc9f5d8"
+      url "https://github.com/lkshrk/omni/releases/download/v0.9.2/omni_darwin_arm64.tar.gz"
+      sha256 "aa71f6fe11de041bdb649c1d36cc083ef88ba8456f72e645ca805dcc4e21c4c0"
 
       define_method(:install) do
         bin.install "omni"
@@ -31,15 +31,15 @@ class Omni < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lkshrk/omni/releases/download/v0.9.0/omni_linux_x86_64.tar.gz"
-      sha256 "5a13da8404ea0b8f350e433470a3e1fab570fe43443234565c8dc316ed430222"
+      url "https://github.com/lkshrk/omni/releases/download/v0.9.2/omni_linux_x86_64.tar.gz"
+      sha256 "6249357d30ca6fc4cf9fec7cd1c4f415c61fb687e3bceb4d5ed7cf290a5aa1c4"
       define_method(:install) do
         bin.install "omni"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lkshrk/omni/releases/download/v0.9.0/omni_linux_arm64.tar.gz"
-      sha256 "082f2836adbe8e818bd3d5d9ed579858af4626383a4e2212f165a40604a78e17"
+      url "https://github.com/lkshrk/omni/releases/download/v0.9.2/omni_linux_arm64.tar.gz"
+      sha256 "b48e3ba8b2a232327d37756fac0674605144a1159175516f127cd6ac6a5ae940"
       define_method(:install) do
         bin.install "omni"
       end
