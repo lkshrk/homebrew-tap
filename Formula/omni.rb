@@ -4,23 +4,23 @@
 class Omni < Formula
   desc "Manage all your dev tools from a single JSON config file."
   homepage "https://github.com/lkshrk/omni"
-  version "0.9.24"
+  version "0.9.25"
   license "MIT"
 
   depends_on "stow"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lkshrk/omni/releases/download/v0.9.24/omni_darwin_x86_64.tar.gz"
-      sha256 "c5ad81d1f46b436d85aabb96165451040f2c1c7ebc632be55818e6cf881a2de9"
+      url "https://github.com/lkshrk/omni/releases/download/v0.9.25/omni_darwin_x86_64.tar.gz"
+      sha256 "b1e8e95f4a742d3409f79a21969a6f81df62e6067b5739b72da9b0fcccfe8b4f"
 
       def install
         bin.install "omni"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lkshrk/omni/releases/download/v0.9.24/omni_darwin_arm64.tar.gz"
-      sha256 "834205e3354ea617e467c860e8fcbf3c91df44e4ceff55535d1a989788d00aba"
+      url "https://github.com/lkshrk/omni/releases/download/v0.9.25/omni_darwin_arm64.tar.gz"
+      sha256 "714c54bf46f819200b8cf7d81c213513d32bc32cd706378fedf54c6a6974b03d"
 
       def install
         bin.install "omni"
@@ -30,15 +30,15 @@ class Omni < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lkshrk/omni/releases/download/v0.9.24/omni_linux_x86_64.tar.gz"
-      sha256 "f0f0de5994894665d759bdfbd171c54cf962d714c94530bf6179ac0c6ec368ed"
+      url "https://github.com/lkshrk/omni/releases/download/v0.9.25/omni_linux_x86_64.tar.gz"
+      sha256 "d60a06770b2744c97c6c73864c8e7233a77358f1f5c4f1bbaefe4414272bf20f"
       def install
         bin.install "omni"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lkshrk/omni/releases/download/v0.9.24/omni_linux_arm64.tar.gz"
-      sha256 "7c2a0d8f689518af43cd818fea08c2fa698ca94005a6f542881e259baaf255be"
+      url "https://github.com/lkshrk/omni/releases/download/v0.9.25/omni_linux_arm64.tar.gz"
+      sha256 "0a3c6d2d2f1e1334c90e35ac693b98d64e22855981fb55071f4b32bc9363f482"
       def install
         bin.install "omni"
       end
