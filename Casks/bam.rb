@@ -1,6 +1,6 @@
 cask "bam" do
-  version "1.0.4"
-  sha256 "492d3e9538ad85fb9818cd9436bde8bb6a0c046194d0c46afb73b87a13732857"
+  version "1.0.5"
+  sha256 "43657448454aef7e2657b14814d6dd67fb03c97cd80a081b52fcbc86c68f33b5"
 
   url "https://github.com/lkshrk/better-audio-mixer/releases/download/v#{version}/bam.zip"
   name "bam"
