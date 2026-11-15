@@ -1,6 +1,6 @@
 cask "d-streamy" do
-  version "2.0.1"
-  sha256 "791b45d5181206ca59100870e7e71340c340ffd4f02b7f7fee253bb7c97f8def"
+  version "2.0.2"
+  sha256 "14492e21084fd1591ec3bdb22788d6e63691c8d8dca7880b16acab93a4d477af"
 
   url "https://github.com/lkshrk/d-streamy/releases/download/v#{version}/D-Streamy-#{version}-macos-universal.zip"
   name "D-Streamy"

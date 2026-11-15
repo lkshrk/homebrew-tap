@@ -1,14 +1,14 @@
 class Dstreamy < Formula
   desc "Stream a window or display to a Discord voice channel"
   homepage "https://github.com/lkshrk/d-streamy"
-  version "2.0.1"
+  version "2.0.2"
 
   if Hardware::CPU.arm?
     url "https://github.com/lkshrk/d-streamy/releases/download/v#{version}/dstreamy-#{version}-aarch64-apple-darwin.tar.gz"
-    sha256 "08f80fef959b4d84e2c293c2dcb1056df96b93f1f07b23fb79d58523151733d5"
+    sha256 "767d97dcd1e228420f3ba91d808b1b12a439232ff31daf9db75e0b22530d5b58"
   else
     url "https://github.com/lkshrk/d-streamy/releases/download/v#{version}/dstreamy-#{version}-x86_64-apple-darwin.tar.gz"
-    sha256 "7335f7af7483c6ace1e4bcfed45597da6a37a5701561842dfc310245c296d9b7"
+    sha256 "2c584b935c12cb474b497d094d218c82e72953faf9004ef33625c5116d7144e8"
   end
 
   depends_on macos: :sonoma
